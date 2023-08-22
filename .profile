@@ -4,7 +4,7 @@ alias ls='ls -a --color=auto'
 alias grep='grep --color=auto'
 
 # Dotfiles config
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # per OS configuration
 if [[ "$OSTYPE" == "darwin"* ]]; then
