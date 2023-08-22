@@ -1,0 +1,24 @@
+[user]
+  email = ville@talonpoika.net
+  name = Ville Talonpoika
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKKtYZup3Nhyd8ieehmm6GQkXbf3XIeATX+0KjyZnC7G
+[commit]
+  gpgsign = GIT_AUTOCRLF
+[push]
+  autoSetupRemote = GIT_AUTOCRLF
+[pull]
+  rebase = false
+[gpg]
+  format = ssh
+[init]
+  defaultBranch = main
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = GIT_AUTOCRLF
+[core]
+  autocrlf = GIT_AUTOCRLF
+  sshCommand = GIT_SSH_COMMAND
+[gpg "ssh"]
+  program = GIT_SSH_PROGRAM
