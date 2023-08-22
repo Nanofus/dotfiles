@@ -3,9 +3,9 @@
   name = Ville Talonpoika
   signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKKtYZup3Nhyd8ieehmm6GQkXbf3XIeATX+0KjyZnC7G
 [commit]
-  gpgsign = GIT_AUTOCRLF
+  gpgsign = true
 [push]
-  autoSetupRemote = GIT_AUTOCRLF
+  autoSetupRemote = true
 [pull]
   rebase = false
 [gpg]
@@ -16,9 +16,9 @@
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
-  required = GIT_AUTOCRLF
+  required = true
 [core]
-  autocrlf = GIT_AUTOCRLF
+  GIT_AUTOCRLF
   sshCommand = GIT_SSH_COMMAND
 [gpg "ssh"]
   program = GIT_SSH_PROGRAM
