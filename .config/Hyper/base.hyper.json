@@ -44,7 +44,7 @@
       "lightCyan": "#94e2d5",
       "lightWhite": "#a6adc8"
     },
-    "shell": "/opt/homebrew/bin/zsh",
+    "shell": HYPER_SHELL,
     "shellArgs": [
       "--login"
     ],
