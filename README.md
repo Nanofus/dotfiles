@@ -1,6 +1,6 @@
 # Dotfiles
 
-Cross-platform dotfiles used on MacOS, Windows (with Git Bash) and WSL (Arch).
+Cross-platform dotfiles used on MacOS, Windows (with Git Bash) and WSL (Arch). Supports `bash` and `zsh`.
 
 ## Setup
 
