@@ -16,7 +16,5 @@
 [core]
   autocrlf = true
   sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
-[credential]
-  helper = wincred
 [gpg "ssh"]
   program = C:\\Users\\talon\\AppData\\Local\\1Password\\app\\8\\op-ssh-sign.exe
