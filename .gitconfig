@@ -1,0 +1,22 @@
+[user]
+  email = ville@talonpoika.net
+  name = Ville Talonpoika
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKKtYZup3Nhyd8ieehmm6GQkXbf3XIeATX+0KjyZnC7G
+[commit]
+  gpgsign = true
+[gpg]
+  format = ssh
+[init]
+  defaultBranch = main
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+[core]
+  autocrlf = true
+  sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
+[credential]
+  helper = wincred
+[gpg "ssh"]
+  program = C:\\Users\\talon\\AppData\\Local\\1Password\\app\\8\\op-ssh-sign.exe
