@@ -12,7 +12,3 @@ esac
 # WSL specific aliases
 alias winget='winget.exe'
 alias wsl='wsl.exe'
-
-# SSH
-alias ssh-add='ssh-add.exe'
-alias ssh='ssh-add.exe -l > /dev/null || ssh-add.exe && ssh.exe'
