@@ -1,0 +1,92 @@
+{
+  "$schema": "./schema.json",
+  "config": {
+    "updateChannel": "canary",
+    "fontSize": 13,
+    "fontFamily": "MonoLisa",
+    "fontWeight": "normal",
+    "fontWeightBold": "bold",
+    "lineHeight": 1,
+    "letterSpacing": 0,
+    "scrollback": 1000,
+    "cursorShape": "BLOCK",
+    "cursorBlink": true,
+    "borderColor": "#333",
+    "termCSS": "",
+    "windowSize": [
+      800,
+      600
+    ],
+    "workingDirectory": "",
+    "showHamburgerMenu": "",
+    "showWindowControls": "",
+    "padding": "0rem 1rem 0rem 1rem",
+    "backgroundColor": "#1e1e2e",
+    "foregroundColor": "#cdd6f4",
+    "selectionColor": "#585b70",
+    "cursorColor": "#f5e0dc",
+    "cursorAccentColor": "#11111b",
+    "colors": {
+      "black": "#45475A",
+      "red": "#f38ba8",
+      "green": "#a6e3a1",
+      "yellow": "#f9e2af",
+      "blue": "#89b4fa",
+      "magenta": "#f5c2e7",
+      "cyan": "#94e2d5",
+      "white": "#bac2de",
+      "lightBlack": "#585b70",
+      "lightRed": "#f38ba8",
+      "lightGreen": "#a6e3a1",
+      "lightYellow": "#f9e2af",
+      "lightBlue": "#89b4fa",
+      "lightMagenta": "#f5c2e7",
+      "lightCyan": "#94e2d5",
+      "lightWhite": "#a6adc8"
+    },
+    "shell": "/opt/homebrew/bin/zsh",
+    "shellArgs": [
+      "--login"
+    ],
+    "env": {},
+    "bell": "SOUND",
+    "bellSound": null,
+    "bellSoundURL": null,
+    "copyOnSelect": true,
+    "defaultSSHApp": true,
+    "quickEdit": false,
+    "macOptionSelectionMode": "vertical",
+    "webGLRenderer": false,
+    "webLinksActivationKey": "",
+    "disableLigatures": false,
+    "disableAutoUpdates": false,
+    "autoUpdatePlugins": true,
+    "preserveCWD": true,
+    "screenReaderMode": false,
+    "imageSupport": true,
+    "defaultProfile": "default",
+    "profiles": [
+      {
+        "name": "default",
+        "config": {}
+      }
+    ],
+    "opacity": 0.99,
+    "uiFontFamily": "Inter",
+    "clearCommand": "clear",
+    "activeTab": "🚀"
+  },
+  "plugins": [
+    "hyper-opacity",
+    "hyper-init",
+    "hyper-active-tab",
+    "hyper-pane",
+    "hyper-search"
+  ],
+  "localPlugins": [],
+  "keymaps": {
+    "tab:new": "ctrl+t",
+    "pane:close": "ctrl+w",
+    "editor:paste": "ctrl+v"
+  }
+}
