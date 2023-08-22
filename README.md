@@ -1,5 +1,25 @@
 # Dotfiles readme
 
+Dotfiles used on MacOS, Windows (with Git Bash) and WSL (Arch).
+
+## Setup
+
+Based on [a Hacker News comment](https://news.ycombinator.com/item?id=11070797):
+
+```
+git clone --bare https://github.com/USERNAME/dotfiles.git $HOME/.dotfiles
+```
+```
+alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+```
+```
+dotfiles config --local status.showUntrackedFiles no
+```
+```
+dotfiles checkout
+```
+Then checkout the OS-specific branch. The default is Windows.
+
 ## Package list exports
 
 ### Windows packages
