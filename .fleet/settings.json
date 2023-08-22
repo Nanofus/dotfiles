@@ -1,6 +1,6 @@
 {
     "fus.sendAllowed": false,
-    "terminal.fontFamily": "JetBrains Mono",
+    "terminal.fontFamily": "Same as in the editor",
     "terminal.fontSize": 13.0,
     "editor.distractionFreeMode": false,
     "theme": "catppuccin-mocha",
