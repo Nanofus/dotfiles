@@ -4,6 +4,8 @@
   signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKKtYZup3Nhyd8ieehmm6GQkXbf3XIeATX+0KjyZnC7G
 [commit]
   gpgsign = true
+[push]
+  autoSetupRemote = true
 [pull]
   rebase = false
 [gpg]
