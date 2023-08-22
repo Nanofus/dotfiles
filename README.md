@@ -1,6 +1,6 @@
 # Dotfiles
 
-Cross-platform dotfiles used on MacOS, Windows (with Git Bash) and WSL (Arch). Supports `bash` and `zsh`.
+Cross-platform dotfiles used on MacOS, Windows (with Git Bash) and WSL (Arch). Supports `bash` and `zsh`. Uses [Starship](https://starship.rs/) prompt.
 
 ## Setup
 
@@ -12,21 +12,30 @@ dotfiles config --local status.showUntrackedFiles no
 dotfiles checkout
 ~/bootstrap.sh
 ```
-Afterwards, use the `dotfiles` alias to commit changes.
+Afterwards, use the `dotfiles` alias to commit changes. Changes to OS-specific configuration files can be "imported" with `~/converge.sh`.
 
-## Package list exports
+## Migration
 
-### Windows packages
-`winget export -o ~/.export/winget.packages.json`
+Export lists of installed packages per-OS when moving to a new computer.
+
+### Windows
+```
+winget export -o ~/export/winget.packages.json
+```
 
 ### npm and pnpm
-`npm list --global --parseable --depth=0 | sed '1d' | awk '{gsub(/\/.*\//,"",$1); print}' > ~/.export/npm.packages.txt`
+```
+npm list --global --parseable --depth=0 | sed '1d' | awk '{gsub(/\/.*\//,"",$1); print}' > ~/export/npm.packages.txt
+pnpm list --global --parseable | sed '1d' | awk '{gsub(/\/.*\//,"",$1); print}' > ~/export/pnpm.packages.txt
+```
 
-`pnpm list --global --parseable | sed '1d' | awk '{gsub(/\/.*\//,"",$1); print}' > ~/.export/pnpm.packages.txt`
+### Arch and AUR
+```
+yay -Qqen > ~/export/pacman.packages.txt
+yay -Qqem > ~/export/aur.packages.txt
+```
 
-### Arch and AUR packages
-`yay -Qqen > ~/.export/pacman.packages.txt`
-`yay -Qqem > ~/.export/aur.packages.txt`
-
-### Brew packages
-`brew leaves > ~/.export/brew.packages.txt`
+### Brew
+```
+brew leaves > ~/export/brew.packages.txt
+```

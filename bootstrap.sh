@@ -1,4 +1,4 @@
-# per OS configuration
+# Install OS-specific configuration
 if [[ "$OSTYPE" == "darwin"* ]]; then
     cp .macos.gitconfig .gitconfig
     cp .config/Hyper/macos.hyper.json .config/Hyper/hyper.json
