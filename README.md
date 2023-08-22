@@ -12,7 +12,7 @@ dotfiles config --local status.showUntrackedFiles no
 dotfiles checkout
 ~/bootstrap.sh
 ```
-Afterwards, use the `dotfiles` alias to commit changes. Changes to OS-specific configuration files can be "imported" with `~/converge.sh`.
+Afterwards, use the `dotfiles` alias to commit changes. Changes made to the OS-specific configuration files can be "imported" back into the base files with `~/converge.sh`.
 
 ## Migration
 
