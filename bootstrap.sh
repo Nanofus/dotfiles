@@ -4,11 +4,11 @@ cp .base.gitconfig .gitconfig
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
   source .macos.bootstrap.config
-  cp .config/Hyper/base.hyper.json .config/Hyper/hyper.json
+  cp .base.hyper.json .config/Hyper/hyper.json
   sed -i "s|HYPER_SHELL|${HYPER_SHELL}|" .config/Hyper/hyper.json
 elif [[ "$OSTYPE" == "msys" ]]; then
   source .windows.bootstrap.config
-  cp .config/Hyper/base.hyper.json $APPDATA/Hyper/hyper.json
+  cp .base.hyper.json $APPDATA/Hyper/hyper.json
   sed -i "s|HYPER_SHELL|${HYPER_SHELL}|" $APPDATA/Hyper/hyper.json
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
   echo "not implemented"
