@@ -1,4 +1,4 @@
-# Swap rightmost Cmd and Opt
+# Swap rightmost Cmd and Opt for more ergonomic Colemak usage
 hidutil property --set '{"UserKeyMapping":
     [{"HIDKeyboardModifierMappingSrc":0x700000039,
       "HIDKeyboardModifierMappingDst":0x70000002A},
