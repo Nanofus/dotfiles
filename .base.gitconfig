@@ -19,6 +19,6 @@
   required = true
 [core]
   GIT_AUTOCRLF
-  sshCommand = GIT_SSH_COMMAND
+  GIT_SSH_COMMAND
 [gpg "ssh"]
-  program = GIT_SSH_PROGRAM
+  GIT_SSH_PROGRAM
