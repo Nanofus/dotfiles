@@ -1,6 +1,6 @@
 # Base prompt & alias stuff
-alias lsa="ls -lhaGAgo --color=always | sed -re 's/^[^ ]* //'"
-alias ls='ls -a --color=auto'
+alias lsa="ls -lhGAgo --color=always | sed -re 's/^[^ ]* //'"
+alias ls='ls -A --color=auto'
 alias grep='grep --color=auto'
 
 # Dotfiles config
