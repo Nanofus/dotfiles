@@ -1,14 +1,11 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
-# Inserts a blank line between shell prompts
-add_newline = true
-
 format = """
-[](#cba6f7)\
+[](#f5c2e7)\
 $os\
 $username\
-[](bg:#f38ba8 fg:#cba6f7)\
+[](bg:#f38ba8 fg:#f5c2e7)\
 $directory\
 [](fg:#f38ba8 bg:#fab387)\
 $git_branch\
@@ -33,8 +30,8 @@ $time\
 [ ](fg:#b4befe)\
 """
 
-# Disable the blank line at the start of the prompt
-# add_newline = false
+add_newline = true
+command_timeout = 1000
 
 # You can also replace your username with a neat symbol like   or disable this
 # and use the os module below
