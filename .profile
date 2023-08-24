@@ -6,6 +6,9 @@ alias grep='grep --color=auto'
 # Dotfiles config
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+# PATH
+PATH=$PATH:~
+
 # per OS configuration
 if [[ "$OSTYPE" == "darwin"* ]]; then
     source ~/.macos.profile

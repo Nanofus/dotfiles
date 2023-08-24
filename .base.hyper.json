@@ -85,8 +85,8 @@
   ],
   "localPlugins": [],
   "keymaps": {
-    "tab:new": "ctrl+t",
-    "pane:close": "ctrl+w",
-    "editor:paste": "ctrl+v"
+    "tab:new": HYPER_KEYMAP_NEW_TAB,
+    "pane:close": HYPER_KEYMAP_CLOSE_TAB,
+    "editor:paste": HYPER_KEYMAP_PASTE
   }
 }
