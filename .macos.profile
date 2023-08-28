@@ -16,5 +16,8 @@ export PATH=~/.npm-global/bin:$PATH
 # Added by Toolbox App
 export PATH="$PATH:/usr/local/bin"
 
+export SHELL="/opt/homebrew/bin/bash"
+export EDITOR="/opt/homebrew/bin/nano"
+
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
