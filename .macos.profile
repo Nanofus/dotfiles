@@ -11,6 +11,9 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# Ruby
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
 # NPM global
 export PATH=~/.npm-global/bin:$PATH
 # Added by Toolbox App
