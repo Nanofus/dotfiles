@@ -37,8 +37,8 @@ command_timeout = 1000
 # and use the os module below
 [username]
 show_always = false
-style_user = "bg:#cba6f7 fg:#1e1e2e"
-style_root = "bg:#cba6f7 fg:#1e1e2e"
+style_user = "bg:#f5c2e7 fg:#1e1e2e"
+style_root = "bg:#f5c2e7 fg:#1e1e2e"
 format = '[$user ]($style)'
 disabled = false
 
