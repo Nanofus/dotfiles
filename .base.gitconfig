@@ -8,6 +8,9 @@
   autoSetupRemote = true
 [pull]
   rebase = false
+[diff]
+  colormoved = "default"
+  colormovedws = "allow-indentation-change"
 [gpg]
   format = ssh
 [init]
