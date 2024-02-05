@@ -24,3 +24,4 @@ export EDITOR="/opt/homebrew/bin/nano"
 
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
