@@ -6,7 +6,7 @@
     <string>startup</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/User/vita/.macos.startup.command</string>
+        <string>/Users/vita/.macos.startup.command</string>
     </array>
     <key>RunAtLoad</key>
     <true/>
