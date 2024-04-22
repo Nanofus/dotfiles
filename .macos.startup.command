@@ -17,4 +17,5 @@ hidutil property --matching '{"ProductID":0x1969}' --set '{"UserKeyMapping":
 }'
 
 # Swap Arc's icon without the whole invite mess
+# https://twitter.com/kaepora/status/1764556190745288747
 defaults write company.thebrowser.Browser currentAppIconName "flutedGlass"

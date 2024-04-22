@@ -4,6 +4,7 @@ cp ~/.gitconfig ~/.base.gitconfig
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
   source ~/.macos.bootstrap.config
+  cp ~/Library/LaunchAgents/startup.plist ~/.macos.startup.plist
   cp ~/.config/Hyper/hyper.json ~/.base.hyper.json
   sed -i '' -e "s|${HYPER_SHELL}|HYPER_SHELL|" ~/.base.hyper.json
   sed -i '' -e "s|${HYPER_KEYMAP_PASTE}|HYPER_KEYMAP_PASTE|" ~/.base.hyper.json
