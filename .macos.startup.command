@@ -21,7 +21,7 @@ hidutil property --matching '{"ProductID":0x1969}' --set '{"UserKeyMapping":
 # defaults write company.thebrowser.Browser currentAppIconName "flutedGlass"
 
 # Swap mymind's macOS icon
-sudo iconsur set /Applications/mymind.app
+# sudo iconsur set /Applications/mymind.app
 
 # Disable menubar in some apps
 # (Find id with `osascript -e 'id of app "TextEdit"'`)
