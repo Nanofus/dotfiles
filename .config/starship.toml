@@ -2,15 +2,15 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](#f5c2e7)\
+[](color_1)\
 $os\
 $username\
-[](bg:#f38ba8 fg:#f5c2e7)\
+[](bg:color_2 fg:color_1)\
 $directory\
-[](fg:#f38ba8 bg:#fab387)\
+[](fg:color_2 bg:color_3)\
 $git_branch\
 $git_status\
-[](fg:#fab387 bg:#a6e3a1)\
+[](fg:color_3 bg:color_4)\
 $c\
 $elixir\
 $elm\
@@ -23,15 +23,24 @@ $nodejs\
 $nim\
 $rust\
 $scala\
-[](fg:#a6e3a1 bg:#89dceb)\
+[](fg:color_4 bg:color_5)\
 $docker_context\
-[](fg:#89dceb bg:#b4befe)\
+[](fg:color_5 bg:color_6)\
 $time\
-[ ](fg:#b4befe)\
+[ ](fg:color_6)\
 """
 
 add_newline = true
 command_timeout = 1000
+palette = 'rose_pine'
+
+[palettes.rose_pine]
+color_1 = '#f5c2e7'
+color_2 = '#f38ba8'
+color_3 = '#fab387'
+color_4 = '#a6e3a1'
+color_5 = '#89dceb'
+color_6 = '#b4befe'
 
 # You can also replace your username with a neat symbol like   or disable this
 # and use the os module below
