@@ -31,34 +31,36 @@ $time\
 """
 
 add_newline = true
-command_timeout = 1000
+command_timeout = 2000
 palette = 'rose_pine'
 
 [palettes.rose_pine]
+color_0 = '#cba6f7'
 color_1 = '#f5c2e7'
 color_2 = '#f38ba8'
 color_3 = '#fab387'
 color_4 = '#a6e3a1'
 color_5 = '#89dceb'
 color_6 = '#b4befe'
+color_fg = '#1e1e2e'
 
 # You can also replace your username with a neat symbol like   or disable this
 # and use the os module below
 [username]
 show_always = false
-style_user = "bg:#f5c2e7 fg:#1e1e2e"
-style_root = "bg:#f5c2e7 fg:#1e1e2e"
+style_user = "bg:#f5c2e7 fg:color_fg"
+style_root = "bg:#f5c2e7 fg:color_fg"
 format = '[$user ]($style)'
 disabled = false
 
 # An alternative to the username module which displays a symbol that
 # represents the current operating system
 [os]
-style = "bg:#cba6f7"
+style = "bg:color_0"
 disabled = true # Disabled by default
 
 [directory]
-style = "bg:#f38ba8 fg:#1e1e2e"
+style = "bg:color_2 fg:color_fg"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -78,79 +80,79 @@ truncation_symbol = "…/"
 
 [c]
 symbol = "c"
-style = "bg:#a6e3a1 fg:#1e1e2e"
+style = "bg:color_4 fg:color_fg"
 format = '[ $symbol ($version) ]($style)'
 
 [docker_context]
 symbol = "docker"
-style = "bg:#89dceb fg:#1e1e2e"
+style = "bg:color_5 g:color_fg"
 format = '[ $symbol $context ]($style)$path'
 
 [elixir]
 symbol = "elixir"
-style = "bg:#a6e3a1 fg:#1e1e2e"
+style = "bg:color_4 fg:color_fg"
 format = '[ $symbol ($version) ]($style)'
 
 [elm]
 symbol = "elm"
-style = "bg:#a6e3a1 fg:#1e1e2e"
+style = "bg:color_4 fg:color_fg"
 format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
 symbol = ""
-style = "bg:#fab387 fg:#1e1e2e"
+style = "bg:color_3 fg:color_fg"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#fab387 fg:#1e1e2e"
+style = "bg:color_3 fg:color_fg"
 format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
 symbol = "go"
-style = "bg:#a6e3a1 fg:#1e1e2e"
+style = "bg:color_4 fg:color_fg"
 format = '[ $symbol ($version) ]($style)'
 
 [gradle]
-style = "bg:#a6e3a1 fg:#1e1e2e"
+style = "bg:color_4 fg:color_fg"
 format = '[ $symbol ($version) ]($style)'
 
 [haskell]
 symbol = "haskell"
-style = "bg:#a6e3a1 fg:#1e1e2e"
+style = "bg:color_4 fg:color_fg"
 format = '[ $symbol ($version) ]($style)'
 
 [java]
 symbol = "java"
-style = "bg:#a6e3a1 fg:#1e1e2e"
+style = "bg:color_4 fg:color_fg"
 format = '[ $symbol ($version) ]($style)'
 
 [julia]
 symbol = "julia"
-style = "bg:#a6e3a1 fg:#1e1e2e"
+style = "bg:color_4 fg:color_fg"
 format = '[ $symbol ($version) ]($style)'
 
 [nodejs]
 symbol = "node"
-style = "bg:#a6e3a1 fg:#1e1e2e"
+style = "bg:color_4 fg:color_fg"
 format = '[ $symbol ($version) ]($style)'
 
 [nim]
 symbol = "nim"
-style = "bg:#a6e3a1 fg:#1e1e2e"
+style = "bg:color_4 fg:color_fg"
 format = '[ $symbol ($version) ]($style)'
 
 [rust]
 symbol = "rust"
-style = "bg:#a6e3a1 fg:#1e1e2e"
+style = "bg:color_4 fg:color_fg"
 format = '[ $symbol ($version) ]($style)'
 
 [scala]
 symbol = "scala"
-style = "bg:#a6e3a1 fg:#1e1e2e"
+style = "bg:color_4 fg:color_fg"
 format = '[ $symbol ($version) ]($style)'
 
 [time]
 disabled = true
 time_format = "%R" # Hour:Minute Format
-style = "bg:#b4befe fg:#1e1e2e"
+style = "bg:color_6 fg:color_fg"
 format = '[ ♥ $time ]($style)'
