@@ -1,6 +1,6 @@
 #theme = kanagawabones
-#theme = rose-pine
-theme = catppuccin-mocha
+theme = rose-pine
+#theme = catppuccin-mocha
 font-family = MonoLisa
 background-opacity = 0.9
 background-blur-radius = 20
