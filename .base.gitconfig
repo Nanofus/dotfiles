@@ -7,7 +7,7 @@
 [push]
   autoSetupRemote = true
 [pull]
-  rebase = false
+  rebase = true
 [diff]
   colormoved = "default"
   colormovedws = "allow-indentation-change"
